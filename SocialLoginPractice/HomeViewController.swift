@@ -11,11 +11,13 @@ import KakaoSDKUser
 
 class HomeViewController: UIViewController {
     
+    var nickname: String = ""
+    
     @IBOutlet weak var infoLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        infoLabel.text = nickname
     }
     
     @IBAction func logoutBtnClicked(_ sender: UIButton) {
@@ -28,6 +30,4 @@ class HomeViewController: UIViewController {
             }
         }
     }
-    
 }
-

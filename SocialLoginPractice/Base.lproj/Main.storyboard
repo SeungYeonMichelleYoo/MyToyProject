@@ -38,7 +38,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="kakao_login_medium_narrow"/>
                                         <connections>
-                                            <action selector="onKakaoLoginBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hO9-pt-AEu"/>
+                                            <action selector="webLoginBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hRk-T3-dbn"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For Web" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyh-kl-ABn">
@@ -64,24 +64,22 @@
                             <constraint firstItem="vOZ-v7-bxq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="hZP-Qu-c9M"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <segue destination="GOF-eA-xzk" kind="show" identifier="presentToHomeVC" id="lf7-vQ-a9C"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="fsJ-3B-Nbm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="84.732824427480907" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="1011.4503816793892" y="-27.464788732394368"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="Wxc-mY-vEw">
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" id="GOF-eA-xzk" customClass="HomeViewController" customModule="SocialLoginPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VNQ-Y0-aZs">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="cpI-n1-xPQ">
-                                <rect key="frame" x="150.33333333333334" y="297" width="92.666666666666657" height="189"/>
+                                <rect key="frame" x="150.33333333333334" y="331.66666666666669" width="92.666666666666657" height="189.00000000000006"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로그인 성공" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qrG-cB-s7B">
                                         <rect key="frame" x="0.0" y="0.0" width="92.666666666666671" height="20.333333333333332"/>
@@ -98,7 +96,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카카오 아이디" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqb-9a-73m">
-                                        <rect key="frame" x="0.0" y="168.66666666666669" width="92.666666666666671" height="20.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="168.66666666666663" width="92.666666666666671" height="20.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -120,7 +118,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x79-jN-jwJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="879" y="-27"/>
+            <point key="canvasLocation" x="1805.3435114503816" y="-27.464788732394368"/>
         </scene>
     </scenes>
     <resources>
