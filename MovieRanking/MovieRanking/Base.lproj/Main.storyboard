@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lqe-tv-4uh">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="Ijb-80-FZB">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="Lqe-tv-4uh" customClass="HomeViewController" customModule="MovieRanking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GpU-Tw-242">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bnA-sA-CxB">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieTableViewCell" rowHeight="100" id="sr8-q7-aLX" customClass="MovieTableViewCell" customModule="MovieRanking" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sr8-q7-aLX" id="L8w-4v-aYM">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07I-c4-3KF">
+                                                    <rect key="frame" x="28" y="19" width="33" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="관객수" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pil-29-EKT">
+                                                    <rect key="frame" x="28.000000000000004" y="64" width="44.333333333333343" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="07I-c4-3KF" firstAttribute="leading" secondItem="L8w-4v-aYM" secondAttribute="leadingMargin" constant="8" id="0S1-eK-nHO"/>
+                                                <constraint firstItem="07I-c4-3KF" firstAttribute="top" secondItem="L8w-4v-aYM" secondAttribute="topMargin" constant="8" id="64s-re-Bww"/>
+                                                <constraint firstItem="Pil-29-EKT" firstAttribute="leading" secondItem="L8w-4v-aYM" secondAttribute="leadingMargin" constant="8" id="Gxu-1C-Ux9"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Pil-29-EKT" secondAttribute="bottom" constant="4" id="VJk-Zk-D8f"/>
+                                                <constraint firstItem="Pil-29-EKT" firstAttribute="top" secondItem="07I-c4-3KF" secondAttribute="bottom" constant="24" id="VVk-HR-ygb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="audienceCount" destination="Pil-29-EKT" id="GVn-of-W6w"/>
+                                            <outlet property="movieTitle" destination="07I-c4-3KF" id="U1Z-jX-a78"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CZH-zI-V5d"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CZH-zI-V5d" firstAttribute="trailing" secondItem="bnA-sA-CxB" secondAttribute="trailing" id="0h5-8U-hBR"/>
+                            <constraint firstItem="bnA-sA-CxB" firstAttribute="top" secondItem="CZH-zI-V5d" secondAttribute="top" id="e5F-S1-uAN"/>
+                            <constraint firstItem="CZH-zI-V5d" firstAttribute="bottom" secondItem="bnA-sA-CxB" secondAttribute="bottom" id="l2K-Q1-cKq"/>
+                            <constraint firstItem="bnA-sA-CxB" firstAttribute="leading" secondItem="CZH-zI-V5d" secondAttribute="leading" id="zPu-qq-WBr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="bnA-sA-CxB" id="gnn-cS-4Un"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sQ2-V2-VsO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="951.90839694656484" y="-62.676056338028175"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
