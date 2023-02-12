@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5491320A29990FAE00CFBBA1 /* EnterEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5491320929990FAE00CFBBA1 /* EnterEmailViewController.swift */; };
+		5491320C299914AB00CFBBA1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5491320B299914AB00CFBBA1 /* MainViewController.swift */; };
 		54A4FA682997A5BD00F73026 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A4FA672997A5BD00F73026 /* AppDelegate.swift */; };
 		54A4FA6A2997A5BD00F73026 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A4FA692997A5BD00F73026 /* SceneDelegate.swift */; };
-		54A4FA6C2997A5BD00F73026 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A4FA6B2997A5BD00F73026 /* ViewController.swift */; };
+		54A4FA6C2997A5BD00F73026 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A4FA6B2997A5BD00F73026 /* LoginViewController.swift */; };
 		54A4FA6F2997A5BD00F73026 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54A4FA6D2997A5BD00F73026 /* Main.storyboard */; };
 		54A4FA712997A5BE00F73026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54A4FA702997A5BE00F73026 /* Assets.xcassets */; };
 		54A4FA742997A5BE00F73026 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54A4FA722997A5BE00F73026 /* LaunchScreen.storyboard */; };
@@ -19,10 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5491320929990FAE00CFBBA1 /* EnterEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterEmailViewController.swift; sourceTree = "<group>"; };
+		5491320B299914AB00CFBBA1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		54A4FA642997A5BD00F73026 /* AppleLoginPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleLoginPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A4FA672997A5BD00F73026 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54A4FA692997A5BD00F73026 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		54A4FA6B2997A5BD00F73026 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		54A4FA6B2997A5BD00F73026 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		54A4FA6E2997A5BD00F73026 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		54A4FA702997A5BE00F73026 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54A4FA732997A5BE00F73026 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,7 +71,9 @@
 				54A4FA822997A9C300F73026 /* AppleLoginPractice.entitlements */,
 				54A4FA672997A5BD00F73026 /* AppDelegate.swift */,
 				54A4FA692997A5BD00F73026 /* SceneDelegate.swift */,
-				54A4FA6B2997A5BD00F73026 /* ViewController.swift */,
+				54A4FA6B2997A5BD00F73026 /* LoginViewController.swift */,
+				5491320929990FAE00CFBBA1 /* EnterEmailViewController.swift */,
+				5491320B299914AB00CFBBA1 /* MainViewController.swift */,
 				54A4FA6D2997A5BD00F73026 /* Main.storyboard */,
 				54A4FA702997A5BE00F73026 /* Assets.xcassets */,
 				54A4FA722997A5BE00F73026 /* LaunchScreen.storyboard */,
@@ -156,9 +162,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54A4FA6C2997A5BD00F73026 /* ViewController.swift in Sources */,
+				54A4FA6C2997A5BD00F73026 /* LoginViewController.swift in Sources */,
 				54A4FA682997A5BD00F73026 /* AppDelegate.swift in Sources */,
+				5491320A29990FAE00CFBBA1 /* EnterEmailViewController.swift in Sources */,
 				54A4FA6A2997A5BD00F73026 /* SceneDelegate.swift in Sources */,
+				5491320C299914AB00CFBBA1 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

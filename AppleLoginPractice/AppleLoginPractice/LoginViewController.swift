@@ -10,20 +10,41 @@ import FirebaseAuth
 import AuthenticationServices
 import CryptoKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
     fileprivate var currentNonce: String?
+    
+    @IBOutlet weak var emailLoginBtn: UIButton!
+    @IBOutlet weak var googleLoginBtn: UIButton!
+    @IBOutlet weak var appleLoginBtn: UIButton!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        [emailLoginBtn, googleLoginBtn, appleLoginBtn].forEach {
+            $0.layer.borderWidth = 1
+            $0.layer.borderColor = UIColor.white.cgColor
+            $0.layer.cornerRadius = 30
+        }
     }
-
+    
+    
+    @IBAction func googleLoginBtnTapped(_ sender: UIButton) {
+    }
+    
     @IBAction func appleLoginBtnTapped(_ sender: UIButton) {
         startSignInWithAppleFlow()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.navigationBar.isHidden = true
+    }
 }
 
-extension ViewController: ASAuthorizationControllerDelegate {
+extension LoginViewController: ASAuthorizationControllerDelegate {
     func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
         if let appleIDCredential = authorization.credential as? ASAuthorizationAppleIDCredential {
             guard let nonce = currentNonce else {
@@ -58,7 +79,7 @@ extension ViewController: ASAuthorizationControllerDelegate {
 }
 
 //Apple Sign in
-extension ViewController {
+extension LoginViewController {
     func startSignInWithAppleFlow() {
         let nonce = randomNonceString()
         currentNonce = nonce
@@ -117,7 +138,7 @@ extension ViewController {
     }
 }
 
-extension ViewController : ASAuthorizationControllerPresentationContextProviding {
+extension LoginViewController : ASAuthorizationControllerPresentationContextProviding {
     func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
         return self.view.window!
     }
