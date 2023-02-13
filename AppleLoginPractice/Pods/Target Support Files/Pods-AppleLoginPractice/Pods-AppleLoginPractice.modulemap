@@ -1,0 +1,6 @@
+framework module Pods_AppleLoginPractice {
+  umbrella header "Pods-AppleLoginPractice-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C23F28C55DEA05572ECC825 /* Pods_AppleLoginPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B35EFFA5319CB148FB706FF /* Pods_AppleLoginPractice.framework */; };
 		5491320A29990FAE00CFBBA1 /* EnterEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5491320929990FAE00CFBBA1 /* EnterEmailViewController.swift */; };
 		5491320C299914AB00CFBBA1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5491320B299914AB00CFBBA1 /* MainViewController.swift */; };
 		54A4FA682997A5BD00F73026 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A4FA672997A5BD00F73026 /* AppDelegate.swift */; };
@@ -17,7 +18,6 @@
 		54A4FA742997A5BE00F73026 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54A4FA722997A5BE00F73026 /* LaunchScreen.storyboard */; };
 		54A4FA7C2997A66900F73026 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 54A4FA7B2997A66900F73026 /* .gitignore */; };
 		54A4FA7E2997A76200F73026 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54A4FA7D2997A76200F73026 /* GoogleService-Info.plist */; };
-		54A4FA812997A8BE00F73026 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 54A4FA802997A8BE00F73026 /* FirebaseAuth */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +34,9 @@
 		54A4FA7B2997A66900F73026 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		54A4FA7D2997A76200F73026 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		54A4FA822997A9C300F73026 /* AppleLoginPractice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppleLoginPractice.entitlements; sourceTree = "<group>"; };
+		66D4D7053011F7FEA2A4ED86 /* Pods-AppleLoginPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleLoginPractice.release.xcconfig"; path = "Target Support Files/Pods-AppleLoginPractice/Pods-AppleLoginPractice.release.xcconfig"; sourceTree = "<group>"; };
+		9B35EFFA5319CB148FB706FF /* Pods_AppleLoginPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppleLoginPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAF0F2EDAC4DEF1711012AA4 /* Pods-AppleLoginPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleLoginPractice.debug.xcconfig"; path = "Target Support Files/Pods-AppleLoginPractice/Pods-AppleLoginPractice.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,19 +44,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54A4FA812997A8BE00F73026 /* FirebaseAuth in Frameworks */,
+				4C23F28C55DEA05572ECC825 /* Pods_AppleLoginPractice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24193A571A1C04FA2E8CD42E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B35EFFA5319CB148FB706FF /* Pods_AppleLoginPractice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		54A4FA5B2997A5BD00F73026 = {
 			isa = PBXGroup;
 			children = (
 				54A4FA7B2997A66900F73026 /* .gitignore */,
 				54A4FA662997A5BD00F73026 /* AppleLoginPractice */,
 				54A4FA652997A5BD00F73026 /* Products */,
+				871CB1DA48C109505198E5CC /* Pods */,
+				24193A571A1C04FA2E8CD42E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +96,15 @@
 			path = AppleLoginPractice;
 			sourceTree = "<group>";
 		};
+		871CB1DA48C109505198E5CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BAF0F2EDAC4DEF1711012AA4 /* Pods-AppleLoginPractice.debug.xcconfig */,
+				66D4D7053011F7FEA2A4ED86 /* Pods-AppleLoginPractice.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -90,18 +112,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54A4FA782997A5BE00F73026 /* Build configuration list for PBXNativeTarget "AppleLoginPractice" */;
 			buildPhases = (
+				0367A52AAFA943AE5CE78247 /* [CP] Check Pods Manifest.lock */,
 				54A4FA602997A5BD00F73026 /* Sources */,
 				54A4FA612997A5BD00F73026 /* Frameworks */,
 				54A4FA622997A5BD00F73026 /* Resources */,
+				05CB55ABFF4682F845CDA94F /* [CP] Copy Pods Resources */,
+				509976D744D3B1F310149F56 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = AppleLoginPractice;
-			packageProductDependencies = (
-				54A4FA802997A8BE00F73026 /* FirebaseAuth */,
-			);
 			productName = AppleLoginPractice;
 			productReference = 54A4FA642997A5BD00F73026 /* AppleLoginPractice.app */;
 			productType = "com.apple.product-type.application";
@@ -122,7 +144,7 @@
 				};
 			};
 			buildConfigurationList = 54A4FA5F2997A5BD00F73026 /* Build configuration list for PBXProject "AppleLoginPractice" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -130,9 +152,6 @@
 				Base,
 			);
 			mainGroup = 54A4FA5B2997A5BD00F73026;
-			packageReferences = (
-				54A4FA7F2997A8BE00F73026 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-			);
 			productRefGroup = 54A4FA652997A5BD00F73026 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -156,6 +175,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0367A52AAFA943AE5CE78247 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppleLoginPractice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		05CB55ABFF4682F845CDA94F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppleLoginPractice/Pods-AppleLoginPractice-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppleLoginPractice/Pods-AppleLoginPractice-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppleLoginPractice/Pods-AppleLoginPractice-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		509976D744D3B1F310149F56 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppleLoginPractice/Pods-AppleLoginPractice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppleLoginPractice/Pods-AppleLoginPractice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppleLoginPractice/Pods-AppleLoginPractice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		54A4FA602997A5BD00F73026 /* Sources */ = {
@@ -228,6 +306,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -288,6 +367,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -308,6 +388,7 @@
 		};
 		54A4FA792997A5BE00F73026 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAF0F2EDAC4DEF1711012AA4 /* Pods-AppleLoginPractice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -341,6 +422,7 @@
 		};
 		54A4FA7A2997A5BE00F73026 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66D4D7053011F7FEA2A4ED86 /* Pods-AppleLoginPractice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -394,25 +476,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		54A4FA7F2997A8BE00F73026 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		54A4FA802997A8BE00F73026 /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 54A4FA7F2997A8BE00F73026 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 54A4FA5C2997A5BD00F73026 /* Project object */;
 }

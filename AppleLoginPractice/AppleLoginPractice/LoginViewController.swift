@@ -9,15 +9,14 @@ import UIKit
 import FirebaseAuth
 import AuthenticationServices
 import CryptoKit
+import GoogleSignIn
 
 class LoginViewController: UIViewController {
     fileprivate var currentNonce: String?
     
     @IBOutlet weak var emailLoginBtn: UIButton!
-    @IBOutlet weak var googleLoginBtn: UIButton!
+    @IBOutlet weak var googleLoginBtn: GIDSignInButton!
     @IBOutlet weak var appleLoginBtn: UIButton!
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +30,7 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func googleLoginBtnTapped(_ sender: UIButton) {
+        GIDSignIn.sharedInstance().signIn()
     }
     
     @IBAction func appleLoginBtnTapped(_ sender: UIButton) {
@@ -41,6 +41,9 @@ class LoginViewController: UIViewController {
         super.viewWillAppear(animated)
         
         navigationController?.navigationBar.isHidden = true
+        
+        //Google Sign In 웹뷰를 띄움
+        GIDSignIn.sharedInstance().presentingViewController = self
     }
 }
 

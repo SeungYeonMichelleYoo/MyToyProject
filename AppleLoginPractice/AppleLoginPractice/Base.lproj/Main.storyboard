@@ -235,8 +235,18 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYE-l2-ODQ">
+                                <rect key="frame" x="138.33333333333334" y="461" width="116.66666666666666" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="비밀번호 변경">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="resetPasswordBtnTapped:" destination="Kt6-4a-BAO" eventType="touchUpInside" id="Jsm-vN-Ujn"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jxv-mX-gYw">
-                                <rect key="frame" x="153" y="461" width="87" height="36"/>
+                                <rect key="frame" x="153" y="571" width="87" height="36"/>
                                 <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="로그아웃">
@@ -246,17 +256,32 @@
                                     <action selector="logoutBtnTapped:" destination="Kt6-4a-BAO" eventType="touchUpInside" id="M7Q-5L-e30"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlK-7f-ffb">
+                                <rect key="frame" x="131" y="516" width="131.33333333333337" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="닉네임 업데이트">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="profileNicknameBtnTapped:" destination="Kt6-4a-BAO" eventType="touchUpInside" id="38H-Qd-prE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vZa-N5-CRH"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Jxv-mX-gYw" firstAttribute="top" secondItem="r0x-Sc-52G" secondAttribute="bottom" constant="20" id="4Au-2N-sJ9"/>
+                            <constraint firstItem="Jxv-mX-gYw" firstAttribute="top" secondItem="vlK-7f-ffb" secondAttribute="bottom" constant="20" id="45o-Ge-VuY"/>
+                            <constraint firstItem="vlK-7f-ffb" firstAttribute="centerX" secondItem="CoI-0z-1hP" secondAttribute="centerX" id="6WF-c7-14X"/>
+                            <constraint firstItem="Jxv-mX-gYw" firstAttribute="centerX" secondItem="CoI-0z-1hP" secondAttribute="centerX" id="CsH-bo-XZw"/>
                             <constraint firstItem="r0x-Sc-52G" firstAttribute="centerX" secondItem="CoI-0z-1hP" secondAttribute="centerX" id="Gsu-ki-XeA"/>
+                            <constraint firstItem="LYE-l2-ODQ" firstAttribute="centerX" secondItem="CoI-0z-1hP" secondAttribute="centerX" id="SQH-F7-QMl"/>
                             <constraint firstItem="r0x-Sc-52G" firstAttribute="centerY" secondItem="CoI-0z-1hP" secondAttribute="centerY" id="Ulq-mX-8wb"/>
-                            <constraint firstItem="Jxv-mX-gYw" firstAttribute="centerX" secondItem="CoI-0z-1hP" secondAttribute="centerX" id="jI5-i2-Ay1"/>
+                            <constraint firstItem="LYE-l2-ODQ" firstAttribute="top" secondItem="r0x-Sc-52G" secondAttribute="bottom" constant="20" id="VYX-oU-Loj"/>
+                            <constraint firstItem="vlK-7f-ffb" firstAttribute="top" secondItem="LYE-l2-ODQ" secondAttribute="bottom" constant="20" id="Zl3-Kl-hjF"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="resetPasswordBtn" destination="LYE-l2-ODQ" id="vEZ-dX-mKM"/>
                         <outlet property="welcomeLabel" destination="r0x-Sc-52G" id="nuz-RZ-ulF"/>
                     </connections>
                 </viewController>
